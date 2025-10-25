@@ -47,3 +47,24 @@ let isAuthenticated = true;
 
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus)
+
+//DIETARY SERVICES
+let memberType = "non";
+let authorization;
+
+switch (memberType){
+    case "employee":
+        authorization = "Dietary Services";
+        break;
+    case "enrolled member":
+        authorization = "Dietary Services and one on one with a dietician";
+        break;
+    case "subscriber":
+        authorization = "Partial Dietary Services"
+        break;
+    default:
+        authorization = "Subscribe for dietary services"
+        break;
+}
+
+console.log("Dietary Authorization:",authorization)
